@@ -7,3 +7,120 @@
 body {
     font-family: Poppins, sans-serif;
 }
+
+.header {
+    background: #FFF
+}
+
+.header__inner{
+    padding: 12px 0;
+    box-shadow: 0px 1px 0px 0px #E5E5E5;
+}
+
+.header__inner--top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 767.98px) {
+    .header__inner--top {
+        flex-direction: column;
+        gap: 1  0px;
+    }
+    
+}
+
+.header__inner--part1 {
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header__inner--part1__img {
+    width: 15px;
+    height: 18px;
+}
+
+.header__inner--part1__info {
+    color: #666;
+
+    /* Body Tiny/Body Tiny, 400 */
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 130%;
+    /* 15.6px */
+}
+
+.header__inner--part2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__inner--language {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.header__inner--language__info {
+    color: #666;
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 130%;
+    /* 15.6px */
+}
+
+.header__inner--currency {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.header__inner--currency__info {
+    color: var(--Gray-Scale-Gray-600, #666);
+    text-align: center;
+
+    /* Body Tiny/Body Tiny, 400 */
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 130%;
+    /* 15.6px */
+}
+
+.header__inner--part2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__inner--part2__left,
+.header__inner--part2__right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #666;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 130%;
+    /* 15.6px */
+}
+
+.header__inner--part2__left {
+    padding-right: 21px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.header__inner--part2__left::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 15px;
+    background: #666;
+    right: 0;
+}
